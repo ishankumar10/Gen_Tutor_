@@ -1,42 +1,89 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="demo.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Navbar with Sidebar</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <!-- Developed by http://grohit.com/ -->
-<div>Filling the text on hover</div>
-<p data-item='Rohit'>Rohit</p>
+<body style="height: 1500px;">
 
-<section>
-  <div>Real time example, Navbar:</div>
-  <nav>
-    <ul class="menuItems">
-      <li><a href='#' data-item='Home'>Home</a></li>
-      <li><a href='#' data-item='About'>About</a></li>
-      <li><a href='#' data-item='Projects'>Projects</a></li>
-      <li><a href='#' data-item='Blog'>Blog</a></li>
-      <li><a href='#' data-item='Contact'>Contact</a></li>
-    </ul>
-  </nav>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-2 bg-dark text-light">
+            <h3>Sidebar</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+            <h3>Sidebar</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+            <h3>Sidebar</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+        </div>
 
-</section>
+        <!-- Main Content -->
+        <div class="col">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-<!-- Footer starts-->
-<footer>
+            <!-- Page Content -->
+            <div class="container mt-4">
+                <h2>Main Content Area</h2>
+                <p>This is the main content area.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <!-- Copyright -->
-  <!-- ❤️  -->
-  <div class="footer-copyright text-center">&copy; Developed with ❤️</i> by
-    <a href="https://grohit.com/" class="white-text" target="_blank">G Rohit</a>. <a href="https://codepen.io/grohit/" target="_blank">Check my other pens </a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer ends-->
-
-<!-- Developed by http://grohit.com/ -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
