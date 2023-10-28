@@ -9,24 +9,24 @@
 body 
 {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	/* justify-content: center;
+	align-items: center; */
 	min-height: 100vh;
 	background: #000;
-	width: 100%;
-	height: 100%;
+	/* width: 100%;
+	height: 100%; */
 }
 section 
 {
-	position: absolute;
-	width: 100vw;
-	height: 100vh;
+	position: fixed;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 2px;
-	flex-wrap: wrap;
-	overflow: hidden;
+	/* flex-wrap: wrap;
+	overflow: hidden; */
 }
 section::before 
 {
