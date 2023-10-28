@@ -13,8 +13,64 @@
 body {
     background-color: #371381;
     margin: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #000;
+	width: 100%;
+	height: 100%;
 }
-
+section 
+{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+section::before 
+{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#000,red,#000);
+	animation: animate 5s linear infinite;
+}
+@keyframes animate 
+{
+	0%
+	{
+		transform: translateY(-100%);
+	}
+	100%
+	{
+		transform: translateY(100%);
+	}
+}
+section span 
+{
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	width: calc(50px);
+	height: calc(50px);
+	background: #181818;
+	z-index: 2;
+	transition: 1.5s;
+}
+section span:hover 
+{
+	background: red;
+	transition: 0s;
+}
 header {
     width: 100%;
     height: 75px;
