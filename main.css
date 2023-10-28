@@ -31,19 +31,21 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	font-family: 'Poppins', sans-serif;
+
 }
 
 nav li {
-	margin-top: 20px;
+	margin-top: 10px;
 	display: inline-block;
 	list-style: none;
-	padding: 0px 20px;
+	padding: 0px 10px;
 	font-size: 18px;
 }
 
 nav a {
 	text-decoration: none;
-	font-weight: 500;
+	font-weight: 200px;
 	margin-left: 20px;
 	margin-right: 20px;
 	transition: 1s;
@@ -55,7 +57,10 @@ nav a:hover {
 .section-1 {
 	display: flex;
 }
-
+.section-1 a{
+display: inline-block;
+text-decoration: none;
+}
 .section-1 img {
 	max-width: 500px;
 }
@@ -161,6 +166,7 @@ section.left .contactInfo {
 .row section.right .inputGroup {
 	margin: 18px 5px;
 	position: relative;
+	
 }
 .messageForm .halfWidth {
 	flex-basis: 48%;
@@ -170,13 +176,14 @@ section.left .contactInfo {
 }
 .messageForm input,
 .messageForm textarea {
+	border-radius: 12px;
 	width: 100%;
-	font-size: 18px;
+	font-size: 12px;
 	padding: 2px 0px;
-	background-color: #2e2e2e;
+	background-color: #000000;
 	color: #ddd;
 	border: none;
-	border-bottom: 2px solid #666;
+	opacity: 50%;
 	outline: none;
 }
 .messageForm textarea {
@@ -198,9 +205,10 @@ textarea::-webkit-scrollbar-thumb {
 .inputGroup label {
 	position: absolute;
 	left: 0;
-	bottom: 4px;
+	/* bottom: 4px; */
 	color: #888;
-	font-size: 18px;
+	align-items: center;
+	font-size: 12px;
 	transition: 0.4s;
 	pointer-events: none;
 }
