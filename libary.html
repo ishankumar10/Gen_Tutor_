@@ -1,0 +1,323 @@
+<html>
+	<head>
+		<title>Online Book Store</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 1rem 0rem;
+				font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+				background: rgb(0, 0, 126);
+				background: linear-gradient(
+					51deg,
+					rgba(0, 0, 126, 1) 0%,
+					rgba(108, 0, 176, 1) 50%,
+					rgba(174, 0, 181, 1) 100%
+				);
+			}
+
+			header {
+				background: linear-gradient(
+					51deg,
+					rgba(0, 0, 126, 1) 0%,
+					rgba(108, 0, 176, 1) 50%,
+					rgba(174, 0, 181, 1) 100%
+				);
+				background: rgb(0, 0, 126);
+				outline-color: #32132f;
+				height: 160px;
+				font-family: "Times New Roman", Times, serif;
+				font-size: 30px;
+				text-align: center;
+				padding: 5px;
+				margin: 5px;
+			}
+
+			.topnav {
+				overflow: hidden;
+				background-color: #000000;
+			}
+			.nav-align {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-direction: row;
+			}
+			.topnav1 {
+				overflow: auto;
+				background-color: #1fb6d4;
+			}
+			.topnav a {
+				float: left;
+				color: #570583;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+			}
+
+			.topnav a:hover {
+				margin: 4px;
+				background-color: #c20fce;
+				color: black;
+				padding: 12px;
+			}
+
+			.topnav-right {
+				float: right;
+			}
+
+			.container {
+				margin-left: 5px;
+				padding: 2px;
+				display: inline-table;
+				text-align: center;
+			}
+
+			.book {
+				border: 2px solid #a600ff;
+				border-radius: 5px;
+				width: 170px;
+				height: 250px;
+				padding: 10px;
+				margin-left: 80px;
+				margin-bottom: 20px;
+				text-align: center;
+				display: inline-block;
+			}
+
+			div.scroll-container {
+				background-color: #333;
+				overflow: auto;
+				white-space: nowrap;
+				padding: 10px;
+			}
+
+			div.scroll-container img {
+				padding: 10px;
+			}
+			.text {
+				font-size: large;
+				font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+					sans-serif;
+				font-weight: 600;
+				color: #c20fce;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<p>
+				<img
+					src="D:\Team Vayu\Gen_Tutor_\WhatsApp Image 2023-10-29 at 8.32.53 PM.jpeg"
+					height="100px"
+					width="100px"
+					style="vertical-align: middle" /><b>GEN.TUTOR LIBRARY</b>
+			</p>
+		</header>
+		<div class="topnav">
+			<a href="#home">Home</a>
+			<a href="#news">News</a>
+			<a href="#contact">Contact</a>
+			<div class="topnav-right">
+				<a href="#my accounth">My Account</a>
+				<a href="#about">About</a>
+			</div>
+		</div>
+		<br />
+		<!-- <center><div class="nav-align">
+    <a>
+      <ul>
+
+  <div class="topnav1"><img src="https://www.imgbly.com/ib/AaOtgVvtnF.png" height ="70px" breadth="70px"><br>Store Box</div></li>
+ <li><div class="topnav1"><img src="https://www.imgbly.com/ib/t2FLdBHuib.png" height="70px" breadth="70px"><br>Fictions BooK</div></li>
+  <li> <div class="topnav1"><img src="https://www.imgbly.com/ib/QDAA1r7wtP.png" height="70px" breadth="70px"><br>Best Seller</div></li>
+  <li> <div class="topnav1"><img src="https://www.imgbly.com/ib/QDAA1r7wtP.png" height="70px" breadth="70px"><br>Best Seller</div></li>
+  <li><div class="topnav1"><img src="https://www.imgbly.com/ib/ACHSjdcGuY.png" height="70px" breadth="70px"><br>Award Wining</div></li>
+  <li><div class="topnav1"><img src="https://www.imgbly.com/ib/A9IS3xySw8.png" height="70px" breadth="70px"><br> Cards</div></li>
+  <li><div class="topnav1"><img src="https://www.imgbly.com/ib/nsYsN1Ur8k.png" height="70px" breadth="70px"><br>Today's Deal</div></li>
+  <li><div class="topnav1"><img src="https://www.imgbly.com/ib/822IKDeh9V.png" height="70px" breadth="70px"><br>Best Seller</div></li>
+  <li><div class="topnav1"><img src="https://www.imgbly.com/ib/WKONAymArN.png" height="70px" breadth="70px"><br>New</div></li>
+        </a></ul></div>
+</center> -->
+		<br />
+		<center>
+			<img
+				src="D:\Team Vayu\Gen_Tutor_\WhatsApp Image 2023-10-29 at 8.32.04 PM.jpeg"
+				height="180px"
+				width="1000px" />
+		</center>
+		<br />
+		<div class="container">
+			<div class="book">
+				<a
+					><img
+						src="https://imgs.search.brave.com/WEXgdY0Mckh6Vk0mP5dxf2Ekkipe7y6GtUiNr4DULI0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dGl3YXJpYWNhZGVt/eS5jb20vYXBwL3Vw/bG9hZHMvMjAyMy8w/OS84LU1hdGhzLU5D/RVJULVNvbHV0aW9u/cy0xLnBuZw"
+						height="240px"
+						width="170px" />
+				</a>
+			</div>
+			<p class="text">&emsp;&emsp;&emsp;&emsp;&emsp;Dive into Maths Problems</p>
+			&emsp;&emsp;&emsp;&emsp;<a
+				href="https://ncert.nic.in/textbook/pdf/hemh1dd.zip"
+				>Download Now</a
+			>
+		</div>
+
+		<div class="container">
+			<div class="book">
+				<a
+					><img
+						src="https://imgs.search.brave.com/-WfzZvLuKWxL6AzgDXgAZBTfEb2wsEXjFJszqvT5Q8Q/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jYWNo/ZS5jYXJlZXJzMzYw/Lm1vYmkvbWVkaWEv/cHJlc2V0cy84NjBY/NDMwL2FydGljbGVf/aW1hZ2VzLzIwMjAv/MS8yMS9OQ0VSVC1C/b29rcy1mb3ItQ2xh/c3M4LVNjaWVuY2Uu/d2VicA"
+						height="240px"
+						width="170px" />
+				</a>
+			</div>
+			<p class="text">
+				&emsp;&emsp;&emsp;&emsp;&emsp;Explore Scientific Microscope
+			</p>
+			&emsp;&emsp;&emsp;&emsp;<a
+				href="https://ncert.nic.in/textbook/pdf/hesc1dd.zip"
+				>Download Now</a
+			>
+		</div>
+
+		<div class="container">
+			<div class="book">
+				<a
+					><img
+						src="https://imgs.search.brave.com/iExjHoy0h5uM-CXNJGmShqsI_JZo1t_JOWU-gWGsUzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jYWNo/ZS5jYXJlZXJzMzYw/Lm1vYmkvbWVkaWEv/YXJ0aWNsZV9pbWFn/ZXMvMjAyMC8xLzE3/L05DRVJULUJvb2tz/LWZvci1jbGFzcy04/LXNvY2lhbC1zY2ll/bmNlLndlYnA"
+						height="240px"
+						width="170px" />
+				</a>
+			</div>
+			<p class="text">&emsp;&emsp;&emsp;&emsp;&emsp;Lets Dive Social World</p>
+			&emsp;&emsp;&emsp;&emsp;<a
+				href="https://ncert.nic.in/textbook/pdf/hess3dd.zip"
+				>Download Now</a
+			>
+		</div>
+
+		<div class="container">
+			<div class="book">
+				<a
+					><img
+						src="https://imgs.search.brave.com/TbZNW5tzXsdEJK-TzJGWH2Gyj6zDdIjDGJrQZ-rok2U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/amFncmFuam9zaC5j/b20vL2ltcG9ydGVk/L2ltYWdlcy9FL0Fy/dGljbGVzL2NsYXNz/OC1oaW5kaS12YXNh/bnQtYm9vay5qcGc"
+						height="240px"
+						width="170px" />
+				</a>
+			</div>
+			<p class="text">&emsp;&emsp;&emsp;&emsp;&emsp;Learn Poems Of Hindi</p>
+			&emsp;&emsp;&emsp;&emsp;<a
+				href="https://ncert.nic.in/textbook/pdf/hhvs1dd.zip"
+				>Download Now</a
+			>
+		</div>
+
+		<div class="container">
+			<div class="book">
+				<a
+					><img
+						src="https://imgs.search.brave.com/NgpqtnXe_MjH9giK1RXDqagM9AWhHpbQE4WSwWiNWPY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jYWNo/ZS5jYXJlZXJzMzYw/Lm1vYmkvbWVkaWEv/cHJlc2V0cy84NjBY/NDMwL2FydGljbGVf/aW1hZ2VzLzIwMjAv/MS84L05DRVJULUJv/b2tzLWZvci1jbGFz/cy04LUVuZ2xpc2gu/d2VicA"
+						height="240px"
+						width="170px" />
+				</a>
+			</div>
+			<p class="text">&emsp;&emsp;&emsp;&emsp;&emsp;Lets Learn Literature</p>
+			&emsp;&emsp;&emsp;&emsp;<a
+				href="https://ncert.nic.in/textbook/pdf/hehd1dd.zip"
+				>Download Now</a
+			>
+		</div>
+
+		<div class="container">
+			<div class="book">
+				<a
+					><img
+						src="https://imgs.search.brave.com/NgpqtnXe_MjH9giK1RXDqagM9AWhHpbQE4WSwWiNWPY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jYWNo/ZS5jYXJlZXJzMzYw/Lm1vYmkvbWVkaWEv/cHJlc2V0cy84NjBY/NDMwL2FydGljbGVf/aW1hZ2VzLzIwMjAv/MS84L05DRVJULUJv/b2tzLWZvci1jbGFz/cy04LUVuZ2xpc2gu/d2VicA"
+						height="240px"
+						width="170px" />
+				</a>
+			</div>
+			<p class="text">
+				&emsp;&emsp;&emsp;&emsp;&emsp;Dive into Poems Of Shakespere
+			</p>
+			&emsp;&emsp;&emsp;&emsp;<a
+				href="https://ncert.nic.in/textbook/pdf/hehd1dd.zip"
+				>Download Now</a
+			>
+		</div>
+
+		<div class="container">
+			<div class="book">
+				<a
+					><img
+						src="https://imgs.search.brave.com/NgpqtnXe_MjH9giK1RXDqagM9AWhHpbQE4WSwWiNWPY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jYWNo/ZS5jYXJlZXJzMzYw/Lm1vYmkvbWVkaWEv/cHJlc2V0cy84NjBY/NDMwL2FydGljbGVf/aW1hZ2VzLzIwMjAv/MS84L05DRVJULUJv/b2tzLWZvci1jbGFz/cy04LUVuZ2xpc2gu/d2VicA"
+						height="240px"
+						width="170px" />
+				</a>
+			</div>
+			<p class="text">&emsp;&emsp;&emsp;&emsp;&emsp;Grammer Tutions Ahead!</p>
+			&emsp;&emsp;&emsp;&emsp;<a
+				href="https://ncert.nic.in/textbook/pdf/hehd1dd.zip"
+				>Download Now</a
+			>
+		</div>
+
+		<div class="container">
+			<div class="book">
+				<a
+					><img
+						src="https://imgs.search.brave.com/NgpqtnXe_MjH9giK1RXDqagM9AWhHpbQE4WSwWiNWPY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jYWNo/ZS5jYXJlZXJzMzYw/Lm1vYmkvbWVkaWEv/cHJlc2V0cy84NjBY/NDMwL2FydGljbGVf/aW1hZ2VzLzIwMjAv/MS84L05DRVJULUJv/b2tzLWZvci1jbGFz/cy04LUVuZ2xpc2gu/d2VicA"
+						height="240px"
+						width="170px" />
+				</a>
+			</div>
+			<p class="text">&emsp;&emsp;&emsp;&emsp;&emsp;Lets Recorrect Speech</p>
+			&emsp;&emsp;&emsp;&emsp;<a
+				href="https://ncert.nic.in/textbook/pdf/hehd1dd.zip"
+				>Download Now</a
+			>
+		</div>
+		<br />
+		<br />
+		<div class="scroll-container">
+			<img
+				src="https://www.bookswagon.com/bannerimages/86_inr.jpg?v=2.5"
+				alt="Cinque Terre"
+				width="1450"
+				height="400" />
+			<img
+				src="https://www.bookswagon.com/bannerimages/80_inr.jpg?v=1.8"
+				alt="Forest"
+				width="1450"
+				height="400" />
+			<img
+				src="https://www.bookswagon.com/bannerimages/81_inr.jpg?v=2.7"
+				alt="Northern Lights"
+				width="1450"
+				height="400" />
+			<img
+				src="https://www.bookswagon.com/bannerimages/83_inr.jpg?v=1.9"
+				alt="Mountains"
+				width="1450"
+				height="400" />
+			<img
+				src="https://www.bookswagon.com/bannerimages/84_inr.jpg?v=2.7"
+				alt="Forest"
+				width="1450"
+				height="400" />
+			<img
+				src="https://www.bookswagon.com/bannerimages/85_inr.jpg"
+				alt="Northern Lights"
+				width="1450"
+				height="400" />
+			<img
+				src="C:\Users\Kavya\OneDrive\Desktop\BNANNER.png"
+				alt="Mountains"
+				width="1450"
+				height="400" />
+		</div>
+	</body>
+</html>
